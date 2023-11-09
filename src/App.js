@@ -3,7 +3,7 @@ import { useState } from 'react';
 export default function Board() {
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
-  const winner = calculateWinner(squares);
+  const winner = calculateWinner(squares);//TODO change function to have ties in mind
   let status;
 
   if (winner) {
