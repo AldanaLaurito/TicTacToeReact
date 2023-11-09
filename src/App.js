@@ -13,6 +13,10 @@ export default function Board() {
       nextSquares[i] = "O";
     }
 
+    if (squares[i]) {
+      return;
+    }
+
     setSquares(nextSquares);
     setXIsNext(!xIsNext);
   }
